@@ -6,13 +6,13 @@
 # --------------------------------------------------------------------------- #
 
 
-def	ft_count_harvest_recursive():
-	total = int(input("Days until harvest: "))
+def ft_count_harvest_recursive():
+    total = int(input("Days until harvest: "))
 
-	def	countdown(current):
-		if (current > total):
-			print("Harvest time!")
-			return
-		print("Day", current)
-		countdown(current + 1)
-	countdown(1)
+    def countdown(current):
+        if (current > total):
+            print("Harvest time!")
+            return
+        print("Day", current)
+        countdown(current + 1)
+    countdown(1)
